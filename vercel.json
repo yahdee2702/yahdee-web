@@ -1,7 +1,15 @@
 {
 	"redirects": [
-		{ "source": "/", "destination": "/index.html" },
-		{ "source": "/projects", "destination": "/page/projects.html" },
-		{ "source": "/certificates", "destination": "/page/certificates.html" }
+		{ "source": "/", "destination": "/index.html", "permanent": false },
+		{
+			"source": "/projects",
+			"destination": "/pages/projects.html",
+			"permanent": false
+		},
+		{
+			"source": "/certificates",
+			"destination": "/pages/certificates.html",
+			"permanent": false
+		}
 	]
 }
