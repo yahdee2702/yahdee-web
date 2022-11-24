@@ -1,0 +1,7 @@
+{
+	"redirects": [
+		{ "source": "/", "destination": "/index.html" },
+		{ "source": "/projects", "destination": "/page/projects.html" },
+		{ "source": "/certificates", "destination": "/page/certificates.html" }
+	]
+}
