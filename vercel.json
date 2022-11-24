@@ -1,15 +1,13 @@
 {
-	"redirects": [
-		{ "source": "/", "destination": "/index.html", "permanent": false },
+	"rewrites": [
+		{ "source": "/", "destination": "/index.html" },
 		{
 			"source": "/projects",
-			"destination": "/pages/projects.html",
-			"permanent": false
+			"destination": "/pages/projects.html"
 		},
 		{
 			"source": "/certificates",
-			"destination": "/pages/certificates.html",
-			"permanent": false
+			"destination": "/pages/certificates.html"
 		}
 	]
 }
