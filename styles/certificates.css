@@ -1,0 +1,62 @@
+@import url(common.css);
+
+.creation-container {
+  display: grid;
+  gap: 1.1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.creation-container > figure {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+
+  border-radius: .5em;
+
+  margin: 0;
+}
+
+.creation-container > figure > figcaption {
+  position: absolute;
+  width: 100%;
+
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  
+  padding: 1.25rem 1rem;
+
+  bottom: 0;
+  opacity: 0;
+
+  transition: opacity 300ms ease-out;
+}
+
+.creation-container > figure:hover > figcaption {
+  opacity: 1;
+}
+
+.creation-container > figure > img {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 765px) {
+  .creation-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 335px) {
+  .creation-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .certificate-container > figure > figcaption {
+    padding: .7rem, .25rem;
+
+    font-size: 1em;
+  }
+}
